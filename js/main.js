@@ -219,8 +219,10 @@ window.onscroll = () => {
     
     if(window.pageYOffset > 60){
         document.querySelector('.header-area').classList.add('fixed');
+	document.querySelector('.header-toggler').style.setProperty('color','#fff')  
     }else{
         document.querySelector('.header-area').classList.remove('fixed');
+	document.querySelector('.header-toggler').style.setProperty('color','var(--main-color)')
     }
 }
 
