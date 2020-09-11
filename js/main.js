@@ -219,10 +219,15 @@ window.onscroll = () => {
     
     if(window.pageYOffset > 60){
         document.querySelector('.header-area').classList.add('fixed');
-	document.querySelector('.header-toggler').style.setProperty('color','#fff')  
+	document.querySelector('.header-toggler').style.setProperty('color','#fff');
+	document.querySelector('.landing-page .header-area .links.open').style.setProperty('top', 51);
+	document.querySelector('.header-toggler.opened::before').style.setProperty('top', 28);
+	    
     }else{
         document.querySelector('.header-area').classList.remove('fixed');
-	document.querySelector('.header-toggler').style.setProperty('color','var(--main-color)')
+	document.querySelector('.header-toggler').style.setProperty('color','var(--main-color)');
+	document.querySelector('.landing-page .header-area .links.open').style.setProperty('top', 65);
+	document.querySelector('.header-toggler.opened::before').style.setProperty('top', 33);
     }
 }
 
