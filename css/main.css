@@ -79,8 +79,8 @@ body{
 /*Start Scroll Top Button*/
 .scrollTop-btn{
     position: fixed;
-    top: 550px;
-    right: 40px;
+        right: 20px;
+    bottom: 50px;
     z-index: 1000;
     background: var(--main-color);
     color: #fff;
