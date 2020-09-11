@@ -220,11 +220,13 @@ window.onscroll = () => {
     if(window.pageYOffset > 60){
         document.querySelector('.header-area').classList.add('fixed');
 	document.querySelector('.header-toggler').style.setProperty('color','#fff');
-	document.querySelector('.landing-page .header-area.fixed').style.padding = '15px;
-	document.querySelector('.landing-page .header-area.fixed').style.height = '87px';
+	document.querySelector('.landing-page .header-area.fixed').style.setProperty('padding', '15px');
+	document.querySelector('.landing-page .header-area.fixed').style.setProperty('height', '87px');
     }else{
         document.querySelector('.header-area').classList.remove('fixed');
 	document.querySelector('.header-toggler').style.setProperty('color','var(--main-color)');
+	document.querySelector('.landing-page .header-area.fixed').style.setProperty('padding', '15px');
+	document.querySelector('.landing-page .header-area.fixed').style.setProperty('height', '87px');
     }
 }
 
